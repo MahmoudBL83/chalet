@@ -135,6 +135,7 @@ nav article img{
     transition: 0.6s;
 }
 
+
 #slider .fa-angle-left{
     position: absolute;
     left:20px;
@@ -265,6 +266,15 @@ nav article img{
     transition: 0.6s;
 }
 
+#sec2 li{
+    position: relative;
+    list-style: none;
+}
+
+#sec2 li span{
+    display:inline-block;
+}
+
 #sec3 > div p{
     position: absolute;
     top:0;
@@ -348,6 +358,7 @@ nav article img{
     border-radius: 20px;
     color:#3f4548;
     text-shadow: 0px 0px 1px black;
+    box-shadow: 0px 0px 2px black;
 }
 
 #sec4 #videos2::before{
@@ -368,6 +379,7 @@ nav article img{
     z-index:80;
     border-radius: 20px;
     text-shadow: 0px 0px 1px black;
+    box-shadow: 0px 0px 2px black;
 }
 
 footer{
@@ -381,6 +393,10 @@ footer{
     height: 550px;
     border-top:3px solid gray;
     width:100vw;
+}
+
+.overflow{
+    overflow:hidden;
 }
 
 footer > div >div{
