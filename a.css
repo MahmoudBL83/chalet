@@ -13,6 +13,7 @@ body{
     position: relative;
     z-index:-5;
     overflow-x: hidden;
+    line-height: 1!important;
 }
 
 nav{
@@ -365,6 +366,7 @@ nav article img{
     color:#3f4548;
     text-shadow: 0px 0px 1px black;
     box-shadow: 0px 0px 2px black;
+    text-align: center;
 }
 
 #sec4 #videos2::before{
@@ -386,6 +388,7 @@ nav article img{
     border-radius: 20px;
     text-shadow: 0px 0px 1px black;
     box-shadow: 0px 0px 2px black;
+    text-align: center;
 }
 
 footer{
@@ -474,6 +477,7 @@ footer #contacts{
 
 #reviews > div >div{
     font-size:3rem;
+    text-align: end;
 }
 
 #reviews > div >p{
