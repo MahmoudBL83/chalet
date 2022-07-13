@@ -35,6 +35,15 @@ if(window.outerWidth>800){
     })
 }
 
+if(window.innerWidth > 557){
+    document.querySelector('nav').classList.add('overflow');
+}
+
+if(window.innerWidth <= 557){
+    document.querySelector('nav').classList.remove('overflow');
+}
+
+
 
 document.querySelector('#haha').addEventListener('click',()=>{
     document.querySelector('#slider').querySelectorAll('img').forEach((x)=>{
@@ -70,8 +79,8 @@ for(let i=1;i<arr.length;i++){
     }
 }
 
-document.addEventListener('scroll',()=>{
-    if(document.querySelector('#sec3').getBoundingClientRect().y < window.innerHeight+200){
+document.querySelector('body').addEventListener('scroll',()=>{
+    if(document.querySelector('#sec1').getBoundingClientRect().top < 0){
         document.querySelector('.fa-angle-double-down').classList.add('hidden');
     }
     else{
