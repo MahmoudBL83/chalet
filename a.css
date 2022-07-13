@@ -311,11 +311,12 @@ nav article img{
     margin-left:5%;
     position: relative;
     margin-top:350px;
+    margin-bottom:300px
 }
 
 #sec4 div{
     display:flex;
-        justify-content: center;
+    justify-content: center;
 }
 
 #sec4 > #ui{
@@ -428,6 +429,71 @@ footer #contacts{
     position: absolute;
     right:35%;
 }
+
+#reviews{
+    display:flex;
+    width:90%;
+    justify-content: center;
+    align-items: center;
+    margin-left:5%;
+    flex-wrap: wrap;
+    gap:30px;
+    background-color: #b5e9bb;
+    padding-top:100px;
+    padding-bottom:100px;
+    border-radius: 20px;
+    position: relative;
+    margin-top:350px;
+}
+
+#reviews > div{
+    flex-basis:30%;
+    box-shadow:0px 0px 5px black;
+    border-radius:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right:30px;
+    position: relative;
+    padding-bottom:30px;
+    background-color: white;
+}
+
+#reviews i{
+    position: absolute;
+    right:40px;
+    top:40px;
+    font-size:3rem;
+    color:gray;
+}
+
+#reviews > div >div{
+    font-size:3rem;
+}
+
+#reviews > div >p{
+    font-size:2rem;
+    margin-top:90px;
+    text-align: end;
+}
+
+#reviews span{
+    font-size:2rem;
+}
+
+#reviews h1{
+    position: absolute;
+    right:50%;
+    top:-85px;
+    transform:translateX(50%);
+    background-color: #abd2e2;
+    text-shadow: 0px 0px 5px white;
+    font-size:3rem;
+    padding:10px 30px 10px 30px;
+    border-radius:100px;
+    color:gray;
+}
+
 @media(min-width:557px){
     nav i{
         display:none!important;
@@ -563,6 +629,36 @@ footer #contacts{
     }
     nav i{
         display:block;
+    }
+}
+
+@media(max-width:910px){
+    #reviews h1{
+        font-size:2.5rem;
+        width:60%;
+        text-align: center;
+        top:-75px;
+    }
+}
+
+@media(max-width:565px){
+    #reviews h1{
+        font-size:2rem;
+        width:70%;
+        text-align: center;
+        top:-75px
+    }
+}
+
+@media(max-width:1632px){
+    #reviews > div{
+        flex-basis:40%;
+    }
+}
+
+@media(max-width:874px){
+    #reviews > div{
+        flex-basis:80%;
     }
 }
 
