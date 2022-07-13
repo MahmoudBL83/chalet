@@ -178,6 +178,7 @@ nav article img{
     width:90%;
     margin-left:5%;
     height: fit-content;
+    line-height: 1.4!important;
 }
 
 #pay{
@@ -218,6 +219,10 @@ nav article img{
 
 #sec2 > div:hover{
     transform: translateY(-20px);
+}
+
+#sec2 ol{
+    padding:0;
 }
 
 #sec2 h1{
