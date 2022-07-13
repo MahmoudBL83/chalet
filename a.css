@@ -13,7 +13,7 @@ body{
     position: relative;
     z-index:-5;
     overflow-x: hidden;
-    line-height: 1!important;
+    line-height: 0.9!important;
 }
 
 nav{
@@ -674,6 +674,15 @@ footer #contacts{
 @media(max-width:874px){
     #reviews > div{
         flex-basis:80%;
+    }
+}
+
+@media(max-width:365px){
+    #sec1 span{
+        font-size:2rem!important;;
+    }
+    #sec1 #now{
+        font-size:1.7rem!important;
     }
 }
 
