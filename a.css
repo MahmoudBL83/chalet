@@ -552,7 +552,7 @@ footer #contacts{
 @media(max-width:771px){
     footer{
         flex-direction: column!important;
-        height:1100px;
+        height:1250px;
         gap:40px;
     }
     #map, #contacts,#links{
