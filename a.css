@@ -16,6 +16,7 @@ body{
     line-height: 0.9!important;
 }
 
+/*navbar*/
 nav{
     position: fixed;
     top:0;
@@ -32,11 +33,13 @@ nav{
     border-bottom:2px solid gray;
 }
 
+/*burger icon menu for mobile screen*/
 nav i{
     position: fixed;
     top:25px;
 }
 
+/*navbar boxes*/
 nav div, nav article{
     padding:10px;
     height: 80px;
@@ -76,7 +79,7 @@ nav article img{
 }
 
 #sec1{
-    background-image:url(./poolside-flat-composition-with-sunbeds_1284-49611.webp);
+    background-image:url(./photos/poolside-flat-composition-with-sunbeds_1284-49611.webp);
     height: 70%;
     backdrop-filter: blur(8px);
     background-repeat: no-repeat;
