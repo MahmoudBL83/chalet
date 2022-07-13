@@ -1,0 +1,552 @@
+html{
+    margin:0;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding:0;
+    width:100%;
+    height:100%;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    position: relative;
+    z-index:-5;
+    overflow-x: hidden;
+}
+
+nav{
+    position: fixed;
+    top:0;
+    display:flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    width:100%;
+    z-index: 5;
+    background-color: #ffffff;
+    height:120px;
+    font-size: 2rem;
+    z-index: 50;
+    border-bottom:2px solid gray;
+}
+
+nav div, nav article{
+    padding:10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    justify-content: center;
+}
+
+nav div{
+    padding-top:30px;
+}
+
+nav div:hover{
+    background-color: #b5e9bb;
+    transform: scale(1.22);
+    margin-left: 40px;
+    margin-right:40px;
+}
+
+nav article img{
+    position: absolute;
+    left:calc(10vh - 15px);
+    top:0;
+}
+
+#now{
+    background-color: #abd2e2;
+    border-radius:100px;
+    padding:10px 30px 10px 30px;
+    border:1px solid gray;
+    width:fit-content;
+    position: relative;
+    z-index:30!important;
+    cursor: pointer;
+}
+
+#sec1{
+    background-image:url(./poolside-flat-composition-with-sunbeds_1284-49611.webp);
+    height: 70%;
+    backdrop-filter: blur(8px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index:-5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:90vw;
+    margin-left: 5%;
+    border-radius:30px;
+    position: relative;
+    gap:20px;
+}
+
+#sec1 > div{
+    margin-left:10%;
+    font-size:4rem;
+    position: relative;
+    color:#000202;
+    z-index:10;
+}
+
+#sec1::after{
+    content: "";
+    width:90vw;
+    position: absolute;
+    height: 70vh;
+    top:0;
+    background:linear-gradient(to right,#b5e9bb,#abd2e2,transparent);
+    z-index:-1;
+    border-radius: 30px;
+}
+
+#drop{
+    position: absolute;
+    width: 80vw;
+    height:300px;
+    background-color: white;
+    border:1px solid #ced4db;
+    border-radius:15px;
+    bottom:-180px;
+    z-index:50;
+    left:5vw;
+    transition: 0.6s;
+}
+
+#slider article{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height:300px;
+    border-radius: 15px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+#slider{
+    transition: 0.6s;
+}
+
+#slider .fa-angle-left{
+    position: absolute;
+    left:20px;
+    top:50%;
+    font-size:5rem;
+    background-color: rgba(0,0,0,0.4);
+    color:white;
+    padding:0px 5px 0px 8px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#slider .fa-angle-right{
+    position: absolute;
+    right:20px;
+    top:50%;
+    font-size:5rem;
+    background-color: rgba(0,0,0,0.4);
+    color:white;
+    padding:0px 5px 0px 8px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#sec2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    flex-wrap: wrap;
+    height:100vh;
+    position: relative;
+    margin-top:250px;
+    width:90%;
+    margin-left:5%;
+    height: fit-content;
+}
+
+#pay{
+    position: relative;
+}
+
+#pay2{
+    position: absolute;
+    top:-50px;
+    width:40%;
+    left:50%;
+    transform: translateX(-50%);
+    background-image: url(./282-2826026_concert-ticket-template-png-transparent-concert-ticket-png-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#pay2::before{
+    content: '800' ;
+    position: absolute;
+    top:50px;
+    right:52%;
+    transform: translateX(50%) skew(0,-7deg);
+
+}
+
+#sec2 > div{
+    border:1px solid gray;
+    font-size:2.5rem;
+    padding:50px;
+    border-radius: 10px;
+    box-shadow:5px 5px 60px #9b9b9b;
+    flex-basis:27%;
+    text-align: center;
+    height:680.820px;
+}
+
+
+#sec2 > div:hover{
+    transform: translateY(-20px);
+}
+
+#sec2 h1{
+    border-bottom: 1px solid gray;
+    padding-bottom:30px;
+}
+
+#sec2 > div span{
+    display:block
+}
+
+.hidden{
+    display:none!important;
+}
+
+#sec3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+    width:90%;
+    flex-wrap: wrap;
+    gap:40px;
+    margin-left:5%;
+    position: relative;
+    margin-top: 200px;
+}
+
+#sec3::before{
+    background-color:rgb(171, 210, 226);
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height:calc(110%);
+    z-index:-2;
+    transform: skew(0,3deg);
+}
+
+#sec3 > div{
+    height:500px;
+    width:500px;
+    overflow: hidden;
+    border:30px solid white;
+    position: relative;
+    transition: 0.6s;
+}
+
+#sec3 div img{
+    height:100%;
+    overflow: hidden;
+    width:100%;
+    transition: 0.6s;
+}
+
+#sec3 > div p{
+    position: absolute;
+    top:0;
+    background-color: rgba(0,0,0,0.4);
+    width:inherit;
+    height:inherit!important;
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2rem;
+    color:white;
+    z-index:-1;
+    text-align: center;
+}
+
+#sec3 > div:hover  p{
+    z-index:5;
+}
+
+#sec3 > div:hover  img{
+    transform: scale(1.2);
+}
+
+#sec4{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+    width:90%;
+    flex-wrap: wrap;
+    gap:200px;
+    margin-left:5%;
+    position: relative;
+    margin-top:350px;
+}
+
+#sec4 div{
+    display:flex;
+        justify-content: center;
+}
+
+#sec4 > #ui{
+    left:5%;
+    position: absolute;
+}
+
+#sec4 > #videos1 , #sec4 > #videos2{
+    height:500px;
+    width:500px;
+    border:30px solid white;
+    position: relative;
+    transition: 0.6s;
+    z-index:3;
+    border-radius: 10px;
+    border:10px solid #fafafa;
+}
+
+#sec4 video{
+    position: relative;
+    z-index:100;
+    box-shadow: 0px 0px 10px black;;
+}
+
+#sec4 #videos1::before{
+    content: 'حمام السباحة';
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size:2.5rem;
+    padding-bottom:40px;
+    background-color: #d9e8ec;
+    top:50%;
+    right:50%;
+    transform: translateX(50%);
+    position: absolute;
+    height:350px;
+    width:650px;
+    z-index:80;
+    border-radius: 20px;
+    color:#3f4548;
+    text-shadow: 0px 0px 1px black;
+}
+
+#sec4 #videos2::before{
+    content: 'غرفة النوم المزدوجة';
+    display:flex;
+    color:#3f4548;
+    align-items: flex-end;
+    justify-content: center;
+    font-size:2.5rem;
+    padding-bottom:40px;
+    background-color: #d9e8ec;
+    top:50%;
+    right:50%;
+    transform: translateX(50%);
+    position: absolute;
+    height:350px;
+    width:650px;
+    z-index:80;
+    border-radius: 20px;
+    text-shadow: 0px 0px 1px black;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:150px;
+    font-size:1.8rem;
+    text-align: end;
+    background-color: #b5e9bb;
+    height: 550px;
+    border-top:3px solid gray;
+    width:100vw;
+}
+
+footer > div >div{
+    font-size:2rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+footer >div >div:hover{
+    text-shadow: 0px 0px 10px white;
+}
+
+footer #map{
+    border:1px solid gray;
+}
+
+footer #map{
+    position: absolute;
+    left:5%;
+    width:30%;
+}
+
+footer #links{
+    position: absolute;
+    right:5%;
+}
+
+footer #contacts{
+    position: absolute;
+    right:35%;
+}
+@media(min-width:557px){
+    nav i{
+        display:none!important;
+    }
+}
+
+@media(max-width:1575px){
+    #sec2 div{
+        height: 900px;
+    }
+}
+
+@media(max-width:1327px){
+    #sec2 div{
+        height: 650px;
+        flex-basis:70%
+    }
+}
+
+@media(max-width:1668px){
+    footer{
+        font-size:1.5rem;
+    }
+    #contacts{
+        right:25%!important;
+    }
+}
+
+@media(max-width:1383px){
+    footer{
+        font-size:1.5rem;
+    }
+    #contacts{
+        right:30%!important;
+    }
+    #map{
+        width:30%;
+    }
+}
+
+@media(max-width:1007px){
+    footer{
+        font-size:1.2rem;
+    }
+    #contacts{
+        right:30%!important;
+    }
+    footer >div>div{
+        font-size:1.5rem;
+    }
+    #map{
+        width:30%;
+    }
+}
+
+@media(max-width:771px){
+    footer{
+        flex-direction: column!important;
+        height:1100px;
+        gap:40px;
+    }
+    #map, #contacts,#links{
+        position: relative!important;
+        right:0!important;;
+    }
+    #contacts{
+        border-bottom: 1px solid gray;
+        padding-bottom:40px;
+    }
+    #map{
+        width:80%!important;
+        margin-right:15%;
+    }
+    nav article img{
+        left:0!important;
+    }
+    nav{
+        font-size:1.5rem;
+    }
+    #sec4 > div{
+        display:flex;
+        justify-content: center;
+        width:100%!important;
+    }
+    #sec4 video{
+        width:100%!important;
+    }
+    #sec4 #videos1::before , #sec4 #videos2::before{
+        width:110%;
+    }
+    #sec2 > div{
+        height:fit-content!important;
+        font-size:1.5rem;
+    }
+    #pay{
+        width:70%
+    }
+    #pay img{
+        transform: translate(5px,0px)!important;
+    }
+}
+
+@media(max-width:1085px){
+    nav{
+        justify-content: start;
+        padding-left: 35%;
+        height:100px;
+    }
+}
+
+@media(max-width:1370px){
+    #sec1 > div span{
+        font-size:3rem;
+    }
+    #now{
+        font-size:2rem!important;
+        margin-left:50%!important;
+        transform: translateX(-50%);
+        padding:10px;
+    }
+    #sec1> div{
+        text-align: center;
+        margin:0px 10px 0px 10px;
+    }
+}
+
+@media(max-width:557px){
+    nav{
+        flex-direction: column;
+    }
+    nav > div{
+        display:none!important;
+    }
+    nav i{
+        display:block;
+    }
+}
+
