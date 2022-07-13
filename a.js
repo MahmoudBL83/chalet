@@ -26,15 +26,14 @@ rightArrow.addEventListener('click',()=>{
         document.querySelector('#slider').querySelector('article').appendChild(x)
     })
 })
-window.addEventListener('resize',()=>{
-    if(window.outerWidth>800){
-        document.querySelector('#slider').querySelectorAll('img').forEach((x)=>{
-            x.addEventListener('click',()=>{
-                    x.style = 'transform:scale(1.1);height:600px;position:fixed;'
-            })
+
+if(window.outerWidth>800){
+    document.querySelector('#slider').querySelectorAll('img').forEach((x)=>{
+        x.addEventListener('click',()=>{
+                x.style = 'transform:scale(1.1);height:600px;position:fixed;'
         })
-    }
-})
+    })
+}
 
 
 document.querySelector('#haha').addEventListener('click',()=>{
