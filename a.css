@@ -60,7 +60,7 @@ nav div:hover{
 
 nav article img{
     position: absolute;
-    left:calc(10vh - 15px);
+    left:calc(10vw - 96px);
     top:0;
 }
 
@@ -614,7 +614,7 @@ footer #contacts{
 @media(max-width:1085px){
     nav{
         justify-content: start;
-        padding-left: 35%;
+        padding-left: 25%;
         height:100px;
     }
 }
