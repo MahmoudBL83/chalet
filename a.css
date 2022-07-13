@@ -31,6 +31,11 @@ nav{
     border-bottom:2px solid gray;
 }
 
+nav i{
+    position: fixed;
+    top:25px;
+}
+
 nav div, nav article{
     padding:10px;
     height: 80px;
@@ -251,8 +256,8 @@ nav article img{
 }
 
 #sec3 > div{
-    height:500px;
-    width:500px;
+    height:400px;
+    width:400px;
     overflow: hidden;
     border:30px solid white;
     position: relative;
