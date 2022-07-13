@@ -132,7 +132,7 @@ document.querySelector('#links').querySelectorAll('div').forEach((x,i)=>{
 document.querySelector('nav').querySelector('i').addEventListener('click',()=>{
     if(document.querySelector('nav').querySelectorAll('div')[0].style.display==''){
         document.querySelector('nav').querySelectorAll('div').forEach((x,i)=>{
-            x.style='display:block!important;background-color:white;width:200px;border:1px solid gray;transform:translateX(-5.5vw);width:130px;'
+            x.style='display:block!important;background-color:white;width:200px;border:1px solid gray;transform:translate(-5.5vw,80px);width:130px;'
         })
     }
     else{
