@@ -65,8 +65,17 @@ document.querySelector('.fa-angle-double-down').addEventListener('click',(e)=>{
     document.querySelector('.fa-angle-double-down').classList.add('hidden')
 })
 
+document.querySelector('nav').querySelector('img').addEventListener('click',()=>{
+    location.reload()
+})
+
 let arr = document.querySelector('nav').querySelectorAll('div')
-for(let i=1;i<arr.length;i++){
+for(let i=0;i<arr.length;i++){
+    if(i==0){
+        arr[i].addEventListener('click',()=>{
+            document.querySelector('#sec1').scrollIntoView({behavior:'smooth'})
+        })
+    }
     if(i==1){
         arr[i].addEventListener('click',()=>{
             document.querySelector('#sec3').scrollIntoView({behavior:'smooth'})
@@ -75,6 +84,11 @@ for(let i=1;i<arr.length;i++){
     if(i==2){
         arr[i].addEventListener('click',()=>{
             document.querySelector('#sec2').scrollIntoView({behavior:'smooth'})
+        })
+    }
+    if(i==3){
+        arr[i].addEventListener('click',()=>{
+            document.querySelector('#reviews').scrollIntoView({behavior:'smooth'})
         })
     }
 }
@@ -106,6 +120,11 @@ document.querySelector('#links').querySelectorAll('div').forEach((x,i)=>{
     if(i==2){
         x.addEventListener('click',()=>{
             document.querySelector('#sec2').scrollIntoView({behavior:'smooth'})
+        })
+    }
+    if(i==3){
+        x.addEventListener('click',()=>{
+            document.querySelector('#reviews').scrollIntoView({behavior:'smooth'})
         })
     }
 })
@@ -143,3 +162,22 @@ window.addEventListener('resize',()=>{
         },500)
     }
 })
+
+if(window.outerWidth>557){
+    document.querySelector('nav').querySelectorAll('div').forEach((x)=>{
+        x.style=''
+    })
+    document.querySelector('#sec3').querySelectorAll('p').forEach((x)=>{
+        x.style=''
+    })
+}
+else{
+    document.querySelector('#sec3').querySelectorAll('div').forEach((x)=>{
+        x.style=`height:${x.clientWidth}px`
+    })
+    setTimeout(()=>{
+        document.querySelector('#sec3').querySelectorAll('p').forEach((x)=>{
+            x.style=`width:${x.offsetHeight}px!Important`
+        })
+    },500)
+}
