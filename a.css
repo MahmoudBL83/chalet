@@ -407,6 +407,7 @@ footer{
     height: 550px;
     border-top:3px solid gray;
     width:100vw;
+    line-height:1.5!important;
 }
 
 .overflow{
